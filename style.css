@@ -11,6 +11,6 @@
     .chip {
         color: rgb(212, 212, 216);
 
-        @apply border-main rounded-3xl py-1 px-4 select-none
+        @apply border-main rounded-3xl py-0.5 px-3 select-none text-sm
     }
 }
