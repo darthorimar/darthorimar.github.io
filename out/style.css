@@ -669,6 +669,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
