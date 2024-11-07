@@ -669,6 +669,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -687,6 +691,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .bg-black {
