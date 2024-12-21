@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilya Kirillov | Darthorimar</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df9eda43d4.js" crossorigin="anonymous"></script>
+    <script defer src="https://r.darthorimar.me/st.js" data-website-id="6dc90293-bca3-460c-a5a9-58ba472a8546"></script>
+</head>
+
+
+<body class="bg-black text-white">
+    <div class="container mx-auto flex flex-col gap-1 p-6 lg:w-2/3">
+        <img src="logo_darth.svg" width="256" class="-mb-8 self-center" />
+        <h1 class="text-5xl text-white font-bold text-center mt-4">
+            Ilya Kirillov
+        </h1>
+
+        <h2 class="text-2xl text-white font-normal text-center">
+            Software Engineer
+        </h2>
+
+        <h2 class="text-base text-white font-normal text-center">
+            Amsterdam, the Netherlands
+        </h2>
+
+        <div class="flex gap-2 self-center mt-2">
+            <a href="https://github.com/darthorimar">
+                <i class="fa-brands fa-github fa-xl color-white"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ilia-kirillov/">
+                <i class="fa-brands fa-linkedin fa-xl color-white"></i>
+            </a>
+        </div>
+
+        <h3 class="text-3xl text-white font-medium mt-16">
+            My Projects
+        </h3>
+        <div class="flex flex-col gap-6 mt-2">
+            <% projects.forEach(project => { %>
+                <div class="p-4 lg:p-8 border-main flex gap-6 items-start">
+                    <%- project.icon %>
+                    <div class="flex flex-col">
+                        <h3 class="text-2xl text-white font-bold">
+                            <%- project.header %>
+                        </h3>
+                        <div class="mt-0.5">
+                            <%- project.subheader %>
+                        </div>
+                        <p class="text-sm my-2 text-wrap" style="color: rgb(161, 161, 170)">
+                            <%- project.description %>
+                        </p>
+                        <div class="flex gap-2 -ml-1 mt-2 flex-wrap">
+                            <%- project.tags.map(tag => `<div class="chip">${tag}</div>`).join('') %>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
