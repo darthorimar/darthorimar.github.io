@@ -1,5 +1,18 @@
 export const projects = [
     {
+        icon: `<img src="https://raw.githubusercontent.com/darthorimar/rekot/refs/heads/master/logo.svg" class="w-16 h-16" />`,
+        header: `<a href="https://github.com/darthorimar/rekot" target="_blank">
+            ReKot
+        </a>`,
+        subheader:  `<div class="mt-0.5 flex gap-2">
+                         <a href="https://github.com/darthorimar/rekot" target="_blank" class="block">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                        </a>
+                    </div>`,
+        description: `Kotlin REPL with an IDE-like experience in the terminal. Supports multiline code editing, multiple interconnected cells, code completion, and error highlighting.`,
+        tags: ['Kotlin', 'Kotlin Analysis API']
+    },
+    {
         icon: `<img src="vocabreel_logo.svg" class="border-main w-16 h-16" />`,
         header: `<a href="https://vocabreel.com" target="_blank">
             VocabReel
