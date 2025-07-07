@@ -1,4 +1,18 @@
 export const projects = [
+       {
+        icon: `<img src="kotlin_logo.svg" class="w-16 h-16" />`,
+        header: `<a href="https://github.com/Kotlin/kotlin-lsp" target="_blank">
+            Language Server for Kotlin
+        </a>`,
+        subheader:  `<div class="mt-0.5 flex gap-2">
+                         <a href="https://github.com/Kotlin/kotlin-lsp" target="_blank" class="block">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                        </a>
+                    </div>`,
+        description: `As a part of my work at JetBrains, I led the development of the Kotlin Language Server and the VS Code extension. 
+        The language server provides code completion, code navigation, and other IDE-like features for Kotlin in Visual Studio Code.`,
+        tags: ['Kotlin', 'Language Server Protocol', 'VS Code']
+    },
     {
         icon: `<img src="https://raw.githubusercontent.com/darthorimar/rekot/refs/heads/master/logo.svg" class="w-16 h-16" />`,
         header: `<a href="https://github.com/darthorimar/rekot" target="_blank">
